@@ -9,6 +9,12 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  AZURE_WEBAPP_NAME: 'mydemowp'    # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: './wordpress'      # set this to the path to your web app project, defaults to the repository root
+  PHP_VERSION: '8.0'                  # set this to the PHP version to use
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +25,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.0'
+          php-version: ${{ env.PHP_VERSION }}
 
       - name: Check if composer.json exists
         id: check_files
@@ -54,7 +60,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'mydemowp'
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E797A4932C4456AB5349617022EFF07 }}
-          package: .
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
