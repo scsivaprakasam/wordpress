@@ -1,0 +1,3 @@
+order deny,allow
+allow from 123.45.67.89
+deny from all
