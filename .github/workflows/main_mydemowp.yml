@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: php-app
-          path: .
+          path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
   deploy:
     runs-on: ubuntu-latest
