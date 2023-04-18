@@ -1,5 +1,5 @@
 <?php
-
+/* For deployment validation */
 
 /**
  * The base configuration for WordPress
