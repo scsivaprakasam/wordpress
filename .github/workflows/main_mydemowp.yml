@@ -24,7 +24,6 @@ jobs:
 
       - name: Replace credentials
         run: |
-          #find . -name "*" -exec sed -i "s/__VERSION__/$(cat VERSION.md)/g" {} +
           sed -i 's/_DB_HOST_/${{ secrets.PROD_DB_HOST }}/g' ./wordpress/wp-config.php
           sed -i 's/_DB_NAME_/${{ secrets.PROD_DB_NAME }}/g' ./wordpress/wp-config.php
           sed -i 's/_DB_PASSWORD_/${{ secrets.PROD_DB_PASSWORD }}/g' ./wordpress/wp-config.php
