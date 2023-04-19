@@ -30,13 +30,13 @@ jobs:
           sed -i 's/_DB_PASSWORD_/${{ secrets.PROD_DB_PASSWORD }}/g' ./wordpress/wp-config.php
           sed -i 's/_DB_USER_/${{ secrets.PROD_DB_USER }}/g' ./wordpress/wp-config.php
           sed -i 's"_AUTH_KEY_"${{ secrets.AUTH_KEY }}"g' ./wordpress/wp-config.php
-          # sed -i 's/_SECURE_AUTH_KEY_/${{ secrets.SECURE_AUTH_KEY }}/g' ./wordpress/wp-config.php
-          # sed -i 's/_LOGGED_IN_KEY_/${{ secrets.LOGGED_IN_KEY }}/g' ./wordpress/wp-config.php
-          # sed -i 's/_NONCE_KEY_/${{ secrets.NONCE_KEY }}/g' ./wordpress/wp-config.php
-          # sed -i 's/_AUTH_SALT_/${{ secrets.AUTH_SALT }}/g' ./wordpress/wp-config.php
-          # sed -i 's/_SECURE_AUTH_SALT_/${{ secrets.SECURE_AUTH_SALT }}/g' ./wordpress/wp-config.php
-          # sed -i 's/_LOGGED_IN_SALT_/${{ secrets.LOGGED_IN_SALT }}/g' ./wordpress/wp-config.php
-          # sed -i 's/_NONCE_SALT_/${{ secrets.NONCE_SALT }}/g' ./wordpress/wp-config.php
+          sed -i 's"_SECURE_AUTH_KEY_"${{ secrets.SECURE_AUTH_KEY }}"g' ./wordpress/wp-config.php
+          sed -i 's"_LOGGED_IN_KEY_"${{ secrets.LOGGED_IN_KEY }}"g' ./wordpress/wp-config.php
+          sed -i 's"_NONCE_KEY_"${{ secrets.NONCE_KEY }}"g' ./wordpress/wp-config.php
+          sed -i 's"_AUTH_SALT_"${{ secrets.AUTH_SALT }}"g' ./wordpress/wp-config.php
+          sed -i 's"_SECURE_AUTH_SALT_"${{ secrets.SECURE_AUTH_SALT }}"g' ./wordpress/wp-config.php
+          sed -i 's"_LOGGED_IN_SALT_"${{ secrets.LOGGED_IN_SALT }}"g' ./wordpress/wp-config.php
+          sed -i 's"_NONCE_SALT_"${{ secrets.NONCE_SALT }}"g' ./wordpress/wp-config.php
 
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
