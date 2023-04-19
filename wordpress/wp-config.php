@@ -1,5 +1,6 @@
 <?php
 /* For deployment validation */
+/* Validation for ftp upload */
 
 /**
  * The base configuration for WordPress
