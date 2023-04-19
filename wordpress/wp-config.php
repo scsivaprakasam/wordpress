@@ -23,20 +23,15 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-/* define( 'DB_NAME', 'wordpress' ); */
 define( 'DB_NAME', '_DB_NAME_' );
 
 /** Database username */
-/* define( 'DB_USER', 'wpuser' ); */
 define( 'DB_USER', '_DB_USER_' );
 
 /** Database password */
-/* define( 'DB_PASSWORD', 'Wp@dmin123' ); */
 define( 'DB_PASSWORD', '_DB_PASSWORD_' );
 
 /** Database hostname */
-/** define( 'DB_HOST', 'mydemowp.mysql.database.azure.com' );*/
-/* define( 'DB_HOST', 'mydemowppvt.mysql.database.azure.com' ); */
 define( 'DB_HOST', '_DB_HOST_' ); 
 
 /** Database charset to use in creating database tables. */
@@ -63,22 +58,14 @@ define( 'WP_SITEURL', 'http://mydemowp.azurewebsites.net/wordpress/' );
  *
  * @since 2.6.0
  */
-// define('AUTH_KEY',         'a2m`u/G.-=B0s%9l7|2eh-{,Q7o1&>z5u0OM_-7gYB,mZ/X1Ag:o7sS_V1NZYC|q');
-// define('SECURE_AUTH_KEY',  'rY9tL}Z6Nnn{P|bw}99))y}G/2zr70+uH;.+nTc_z-RS%@L|<;y}W0%|]syTc.t8');
-// define('LOGGED_IN_KEY',    'Nn_dA{KylTE t8l:&$p(r`UB+Gy;%G/yPH7$tNPmX B)AYBA:W}P#q/|%E&[8@fP');
-// define('NONCE_KEY',        'xP`+mu}i:l,sUU5N`y+3>YH3as$^G]xI/5gdxOLUhlf}TIodZ#LGy-!qZOUl/$@0');
-// define('AUTH_SALT',        'TpyligF5NkE3)QH!T-o;c@(?<hl7Pjb&%EeM3[F?--qIMU+r#K ePKn[d/+n_n7:');
-// define('SECURE_AUTH_SALT', '^3no4V^Vj#8;R>i@LSXpgzZcgy(u;%OdLHPB1=yM@ TE+dSL5%}L}W3k[ l7@q70');
-// define('LOGGED_IN_SALT',   'tc4G&+/Dm!>#f{R>KYh|^C4b,D*LDJ8Oj,i89dCvo3>%}ZLjZJ3Cfs~oCW6#JQ#:');
-// define('NONCE_SALT',       'jw-e:s$z(twq=n|mLxnFev+oi18,Sm-r&FYCqr]Cq_B*?aiB0jn16W*`!.|xAkv*');
-define('AUTH_KEY',         'a2m`u/G.-=B0s%9l7|2eh-{,Q7o1&>z5u0OM_-7gYB,mZ/X1Ag:o7sS_V1NZYC|q');
-define('SECURE_AUTH_KEY',  'rY9tL}Z6Nnn{P|bw}99))y}G/2zr70+uH;.+nTc_z-RS%@L|<;y}W0%|]syTc.t8');
-define('LOGGED_IN_KEY',    'Nn_dA{KylTE t8l:&$p(r`UB+Gy;%G/yPH7$tNPmX B)AYBA:W}P#q/|%E&[8@fP');
-define('NONCE_KEY',        'xP`+mu}i:l,sUU5N`y+3>YH3as$^G]xI/5gdxOLUhlf}TIodZ#LGy-!qZOUl/$@0');
-define('AUTH_SALT',        'TpyligF5NkE3)QH!T-o;c@(?<hl7Pjb&%EeM3[F?--qIMU+r#K ePKn[d/+n_n7:');
-define('SECURE_AUTH_SALT', '^3no4V^Vj#8;R>i@LSXpgzZcgy(u;%OdLHPB1=yM@ TE+dSL5%}L}W3k[ l7@q70');
-define('LOGGED_IN_SALT',   'tc4G&+/Dm!>#f{R>KYh|^C4b,D*LDJ8Oj,i89dCvo3>%}ZLjZJ3Cfs~oCW6#JQ#:');
-define('NONCE_SALT',       'jw-e:s$z(twq=n|mLxnFev+oi18,Sm-r&FYCqr]Cq_B*?aiB0jn16W*`!.|xAkv*');
+define('AUTH_KEY',         '_AUTH_KEY_');
+define('SECURE_AUTH_KEY',  '_SECURE_AUTH_KEY_');
+define('LOGGED_IN_KEY',    '_LOGGED_IN_KEY_');
+define('NONCE_KEY',        '_NONCE_KEY_');
+define('AUTH_SALT',        '_AUTH_SALT_');
+define('SECURE_AUTH_SALT', '_SECURE_AUTH_SALT_');
+define('LOGGED_IN_SALT',   '_LOGGED_IN_SALT_');
+define('NONCE_SALT',       '_NONCE_SALT_');
 /**#@-*/
 
 /**
