@@ -22,6 +22,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Replace credentials
+        run: |
+          #find . -name "*" -exec sed -i "s/__VERSION__/$(cat VERSION.md)/g" {} +
+          sed -i 's/_DB_HOST_/${{ secrets.PROD_DB_HOST }}/g' ./wordpress/wordpress/db_connection.php
+          sed -i 's/_DB_NAME_/${{ secrets.PROD_DB_NAME }}/g' ./wordpress/wordpress/db_connection.php
+          sed -i 's/_DB_PASSWORD_/${{ secrets.PROD_DB_PASSWORD }}/g' ./wordpress/wordpress/db_connection.php
+          sed -i 's/_DB_USER_/${{ secrets.PROD_DB_USER }}/g' ./wordpress/wordpress/db_connection.php
+
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
