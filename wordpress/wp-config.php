@@ -1,5 +1,4 @@
 <?php
-/* For deployment validation */
 /* Validation for ftp upload */
 
 /**
