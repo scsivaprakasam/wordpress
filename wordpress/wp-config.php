@@ -1,4 +1,5 @@
 <?php
+
 /* Validation for ftp upload */
 
 /**
