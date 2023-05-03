@@ -46,8 +46,8 @@ jobs:
           password: ${{ secrets.ftp_password }}
           protocol: ftps
           port: 21 # todo replace with your web hosts ftps port
-          local-dir: ./
-          server-dir: /site/wwwroot/
+          local-dir: ./wordpress/
+          server-dir: /site/wwwroot/wordpress/
           exclude: |
             **/.git*
             **/.git*/**
