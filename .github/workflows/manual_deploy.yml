@@ -50,4 +50,4 @@ jobs:
           server-dir: /site/wwwroot/wordpress/
           exclude: |
             **/.git*
-            **/.git*/**        
+            **/.git*/**
